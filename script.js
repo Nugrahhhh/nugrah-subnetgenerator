@@ -5,7 +5,7 @@ function generateRandomIPAndNetmask() {
         if (i < 3) ip += ".";
     }
 
-    var netmask = "/"+(Math.floor(Math.random() * 9) + 24);
+    var netmask = "/"+(Math.floor(Math.random() * 8) + 24);
 
     var result = ip + " " + netmask;
     document.getElementById('result').innerHTML = "<p>Generated IP Address with Netmask: " + result + "</p>";
